@@ -1,23 +1,28 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Anh Chi Em | Comming soon</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <div class="container">
+          <div className="content">
+            <img src="/logo_anhchiem-removebg-preview.png" alt="Anh Chi Em Logo" class="logo" />
+            <h1 class="title">Anh Chi Em</h1>
+            <h2 class="subtitle">Brothers and Sisters</h2>
+            <p class="message">
+              We are working hard to bring you the best Vietnamese cuisine. <br/> Our
+              website is coming soon. Stay tuned!
+            </p>
+          </div>
+        </div>
       </main>
-
-      <Footer />
     </div>
-  )
+  );
 }
