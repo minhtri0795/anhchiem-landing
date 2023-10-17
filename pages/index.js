@@ -17,8 +17,7 @@ export default function Home() {
             <h1 class="title">Anh Chi Em</h1>
             <h2 class="subtitle">Brothers and Sisters</h2>
             <p class="message">
-              We are working hard to bring you the best Vietnamese cuisine. <br/> Our
-              website is coming soon. Stay tuned!
+              Coming soon...
             </p>
           </div>
         </div>

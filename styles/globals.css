@@ -20,7 +20,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://res.cloudinary.com/saigon-digital/image/upload/v1697528895/bigstock-Vietnamese-Dishes-Set-191527378_okrfek.jpg');
+  background-image: url('https://res.cloudinary.com/saigon-digital/image/upload/c_scale,w_1920/v1697530857/1490111969-huge-min_j9whpp.webp');
   background-size: cover;
   background-position: center;
 }
@@ -31,7 +31,7 @@ main::after{
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #000000cb;
+  background-color: #151515c9;
 }
 .content{
   position: relative;
@@ -67,9 +67,4 @@ body {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-}
-@media screen and (min-width: 1024px) {
-  .content{
-    width: 50%;
-  }
 }
