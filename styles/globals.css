@@ -20,7 +20,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../public/bg.jpg');
+  background-image: url('https://res.cloudinary.com/saigon-digital/image/upload/v1697528895/bigstock-Vietnamese-Dishes-Set-191527378_okrfek.jpg');
   background-size: cover;
   background-position: center;
 }
