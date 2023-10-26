@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 function Signature() {
+    const signatureRef = useRef(null);
+    const [isCopied, setIsCopied] = useState(false);
+  
+    const handleCopyClick = () => {
+      if (signatureRef.current) {
+        const signature = signatureRef.current;
+        const range = document.createRange();
+        range.selectNode(signature);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        setIsCopied(true);
+      }
+    };
   return (
     <section>
       <table
+        ref={signatureRef}
         cellPadding={0}
         cellSpacing={0}
         className="table__StyledTable-sc-1avdl6r-0 kAbRZI"
@@ -347,6 +363,10 @@ function Signature() {
           </tr>
         </tbody>
       </table>
+
+      <button onClick={handleCopyClick}>
+        {isCopied ? 'Copied!' : 'Copy Signature'}
+      </button>
     </section>
   );
 }
